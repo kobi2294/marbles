@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    font-size: 1.5em;
+    font-family: consolas;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    width: max(400px, 50%);
+    align-self: center;
+    color: navy;
+    background-color: rgba(0, 0, 128, 0.071);
+}

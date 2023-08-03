@@ -1,0 +1,33 @@
+:host {
+    --scale: 5px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    height: 40px;
+
+    div.timeline {
+        position: absolute;
+        height: 0px;
+        top: 50%;
+        inset-inline-start: 0px;
+        width: calc(var(--time-offset) * var(--scale));
+        border: 1px solid black;
+    }
+
+    div.next {
+        background: white;
+        z-index: 10;
+        width: 30px;
+        height: 30px;
+        top: 5px;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        inset-inline-start: calc(var(--time-offset) * var(--scale));
+    }
+}

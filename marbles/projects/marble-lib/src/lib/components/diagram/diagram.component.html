@@ -1,1 +1,8 @@
-<p>diagram works!</p>
+<ng-container *ngIf="vm$ |async as vm">
+    <div class="timeline" [style.--time-offset]="vm.totalTime"></div>
+    <div *ngFor="let entry of vm.nexts" class="next"
+        [style.--time-offset]="entry.time"
+    >
+        {{entry.value}}
+    </div>
+</ng-container>
